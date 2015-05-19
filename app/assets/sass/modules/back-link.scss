@@ -1,0 +1,13 @@
+// Back link
+
+a.back-to-previous{
+	@include inline-block;
+  @include core-16();
+  margin: $gutter 0 0;
+  color: $text-colour;
+  text-decoration: none;
+  background: url('/public/images/back-arrow.png') no-repeat 0 3px;
+  padding-left: 10px;
+  background-size: 15%;
+  border-bottom: 1px solid $text-colour;
+}
