@@ -1,6 +1,10 @@
 // Styling for radios and checkboxes
 
 
+.form-control{
+  padding: 2px 5px;
+}
+
   // Hide native controls - (!!!)
   input[type='checkbox'],
   input[type='radio']{
