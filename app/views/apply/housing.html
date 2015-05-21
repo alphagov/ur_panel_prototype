@@ -13,33 +13,38 @@
  	<div class="form-group">
 		<p class="form-hint">Select one:</p>
 	    <div class="form-group">
-	    	<input type="radio" id="housing-1" name="housing"> 
+	    	<input type="radio" id="housing-1" name="housing" class="js-toggle"  data-hide="#other, .other-show" data-show=".other-hide"> 
 	      <label class="form-label form-control-radio" for="housing-1">
 	      	I own my home
 	      </label>
-	      <input type="radio" id="housing-2" name="housing"> 
+	      <input type="radio" id="housing-2" name="housing" class="js-toggle"  data-hide="#other, .other-show" data-show=".other-hide"> 
 	      <label class="form-label form-control-radio" for="housing-2">
 	      	I'm renting a home
 	      </label>
-	      <input type="radio" id="housing-3" name="housing"> 
+	      <input type="radio" id="housing-3" name="housing" class="js-toggle"  data-hide="#other, .other-show" data-show=".other-hide"> 
 	      <label class="form-label form-control-radio" for="housing-3">
 	      	I live in a council owned property
 	      </label>
-	      <input type="radio" id="housing-4" name="housing"> 
+	      <input type="radio" id="housing-4" name="housing" class="js-toggle"  data-hide="#other, .other-show" data-show=".other-hide"> 
 	      <label class="form-label form-control-radio" for="housing-4">
 	      	I currently live with family or friends
 	      </label>
-	      <input type="radio" id="housing-5" name="housing"> 
+	      <input type="radio" id="housing-5" name="housing" class="js-toggle"  data-hide="#other, .other-show" data-show=".other-hide"> 
 	      <label class="form-label form-control-radio" for="housing-5">
 	      	I have no fixed address
 	      </label>
-	      <input type="radio" id="housing-6" name="housing"> 
-	      <label class="form-label form-control-radio" for="housing-6">
-	      	Other:
+
+	      <input type="radio" id="housing-6" name="housing" class="js-toggle"  data-show="#other, .other-show" data-hide=".other-hide"> 
+	      <label class="form-label form-control-radio" id="other-label" for="housing-6">
+	      	Other<span class="other-show js-hidden">:</span><span class="other-hide"> (please specify)</span>
 	      </label>
+
 	      <label class="visuallyhidden" for="other">Please specify</label>
-	      <input class="form-control other-specify" type="text" id="other">
-	      <input type="radio" id="housing-7" name="housing"> 
+	      <input class="form-control other-specify js-hidden" type="text" id="other">
+
+	      <p class="or">or</p>
+
+	      <input type="radio" id="housing-7" name="housing" class="js-toggle"  data-hide="#other, .other-show" data-show=".other-hide"> 
 	      <label class="form-label form-control-radio" for="housing-7">
 	      	Prefer not to say
 	      </label>

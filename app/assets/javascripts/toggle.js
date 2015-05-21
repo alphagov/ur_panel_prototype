@@ -48,6 +48,8 @@
         } else {
           $el.click(toggle.toggle);
         }
+
+
       });
     }
   }
