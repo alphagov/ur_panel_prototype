@@ -38,9 +38,6 @@
     background-color: #fff;
     border: 2px solid $border-colour;
 
-    //width: 32px;
-    //height: 32px;
-
     width: 30px;
     height: 30px;
 
@@ -50,7 +47,6 @@
 
   // Make radios circles not boxes
   .form-control-radio::before{
-    //border-radius: 17px
     border-radius: 16px
   }
 
