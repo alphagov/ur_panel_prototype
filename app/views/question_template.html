@@ -14,26 +14,29 @@
 
 <main id="content" role="main">
 
+	<div class="grid-row">
+		<div class="column-two-thirds">
 
-	<p class="form-navigation">
-		<a class="back-to-previous" href="{{$prevURL}}{{/prevURL}}">Back <span class="visuallyhidden"> to the previous question.</span></a>
-		<span class="question-number">Question {{$questionNumber}}{{/questionNumber}}  of 16</span>
-	</p>
+			<p class="form-navigation">
+				<a class="back-to-previous" href="{{$prevURL}}{{/prevURL}}">Back <span class="visuallyhidden"> to the previous question.</span></a>
+				<span class="question-number">Question {{$questionNumber}}{{/questionNumber}}  of 16</span>
+			</p>
 
-	<h1 class="heading-large">{{$pageTitle}}{{/pageTitle}}</h1>
+			<h1 class="heading-large">{{$pageTitle}}{{/pageTitle}}</h1>
 
-		<form action="{{$nextURL}}{{/nextURL}}" method="get" class="form">
+				<form action="{{$nextURL}}{{/nextURL}}" method="get" class="form">
 
-		{{$questionContent}}
-		{{/questionContent}}		
+				{{$questionContent}}
+				{{/questionContent}}		
 
-	    <div class="form-group">
-	      <!--<a class="button" href="{{$nextURL}}{{/nextURL}}">Continue</a>
-<br>-->
-	      <input type="submit" class="button" value="Continue">
-	    </div>
+			    <div class="form-group">
+			      <input type="submit" class="button" value="Continue">
+			    </div>
 
-	</form>
+			</form>
+
+		</div>
+	</div>
 
 </main>
 
