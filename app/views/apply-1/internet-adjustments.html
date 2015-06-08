@@ -13,37 +13,39 @@
  	<div class="form-group">
 		<p class="form-hint">Select all that apply:</p>
 	    <div class="form-group">
+	      <label class="block-label" for="access-internet-1">
 	    	<input type="checkbox" id="access-internet-1"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-1">
 	      	Wear glasses
 	      </label>
+	      <label class="block-label" for="access-internet-2">
 	      <input type="checkbox" id="access-internet-2"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-2">
 	      	Screen reader
 	      </label>
+	      <label class="block-label" for="access-internet-3">
 	      <input type="checkbox" id="access-internet-3"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-3">
 	      	Large print
 	      </label>
+	      <label class="block-label" for="access-internet-3">
 	      <input type="checkbox" id="access-internet-3"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-3">
 	      	Tinted glasses
 	      </label>
+	      <label class="block-label" for="access-internet-4">
 	      <input type="checkbox" id="access-internet-4"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-4">
 	      	Hearing aid
 	      </label>
+	      <label class="block-label" for="access-internet-5">
 	      <input type="checkbox" id="access-internet-5"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-5">
 	      	Induction loop
 	      </label>
-	      <input type="checkbox" id="access-internet-6"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-6">
-	      	Other:
+	      <label class="block-label" for="access-internet-6">
+	      <input type="checkbox" id="access-internet-6" class="js-toggle" data-toggle="#other"> 
+	      	Other (please specify)
 	      </label>
 
-	      <label class="visuallyhidden" for="other">Please specify</label>
-	      <input class="form-control other-specify" type="text" id="other">
+		   	<div class="form-group js-hidden panel-indent" id="other">   		
+		      <label class="form-label" for="other">Please specify</label>
+		      <input class="form-control other-specify" type="text" id="other">
+		    </div>
 	      
 	    </div>
 	</div>

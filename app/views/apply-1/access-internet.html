@@ -13,37 +13,41 @@
  	<div class="form-group">
 		<p class="form-hint">Select all that apply:</p>
 	    <div class="form-group">
+	      <label class="block-label" for="access-internet-1">
 	    	<input type="checkbox" id="access-internet-1"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-1">
 	      	Home
 	      </label>
-	      <input type="checkbox" id="access-internet-2"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-2">
+	      <label class="block-label" for="access-internet-2">
+	      	<input type="checkbox" id="access-internet-2"> 
 	      	Work
 	      </label>
-	      <input type="checkbox" id="access-internet-3"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-3">
+	      <label class="block-label" for="access-internet-3">
+	      	<input type="checkbox" id="access-internet-3"> 
 	      	School or university
 	      </label>
-	      <input type="checkbox" id="access-internet-4"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-4">
+	      <label class="block-label" for="access-internet-4">
+	      	<input type="checkbox" id="access-internet-4"> 
 	      	Public place (eg. library or cafe)
 	      </label>
-	      <input type="checkbox" id="access-internet-5"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-5">
+	      <label class="block-label" for="access-internet-5">
+	      	<input type="checkbox" id="access-internet-5"> 
 	      	Family or friend's house
 	      </label>
-	      <input type="checkbox" id="access-internet-6"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-6">
+	      <label class="block-label" for="access-internet-6">
+	      	<input type="checkbox" id="access-internet-6"> 
 	      	Mobile (out and about)
 	      </label>
-	      <input type="checkbox" id="access-internet-7"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-7">
-	      	Other:
+	      <label class="block-label" for="access-internet-7">
+	      	<input type="checkbox" id="access-internet-7" class="js-toggle" data-toggle="#other"> 
+	      	Other (please specify)
 	      </label>
 	      
-	      <label class="visuallyhidden" for="other">Please specify</label>
+
+	   	<div class="form-group js-hidden panel-indent" id="other">   		
+	      <label class="form-label" for="other">Please specify</label>
 	      <input class="form-control other-specify" type="text" id="other">
+	    </div>
+	      
 	    </div>
 	</div>
 

@@ -13,29 +13,31 @@
  	<div class="form-group">
 		<p class="form-hint">Select all that apply:</p>
 	    <div class="form-group">
+	      <label class="block-label" for="use-device-1">
 	    	<input type="checkbox" id="use-device-1"> 
-	      <label class="form-label form-control-checkbox" for="use-device-1">
 	      	Desktop computer
 	      </label>
+	      <label class="block-label" for="use-device-2">
 	      <input type="checkbox" id="use-device-2"> 
-	      <label class="form-label form-control-checkbox" for="use-device-2">
 	      	Laptop computer
 	      </label>
+	      <label class="block-label" for="use-device-3">
 	      <input type="checkbox" id="use-device-3"> 
-	      <label class="form-label form-control-checkbox" for="use-device-3">
 	      	Tablet (eg. iPad)
 	      </label>
+	      <label class="block-label" for="use-device-4">
 	      <input type="checkbox" id="use-device-4"> 
-	      <label class="form-label form-control-checkbox" for="use-device-4">
 	      	Smartphone (eg. iPhone, Samsung Galaxy)
 	      </label>
-	      <input type="checkbox" id="use-device-5"> 
-	      <label class="form-label form-control-checkbox" for="use-device-5">
-	      	Other:
+	      <label class="block-label" for="use-device-5">
+	      <input type="checkbox" id="use-device-5" class="js-toggle" data-toggle="#other"> 
+	      	Other (please specify)
 	      </label>
 
-	      <label class="visuallyhidden" for="other">Please specify</label>
+	   	<div class="form-group js-hidden panel-indent" id="other">   		
+	      <label class="form-label" for="other">Please specify</label>
 	      <input class="form-control other-specify" type="text" id="other">
+	    </div>
 
 	    </div>
 	</div>
