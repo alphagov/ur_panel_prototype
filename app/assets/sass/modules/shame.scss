@@ -6,6 +6,19 @@
   color: $black;
 }
 
+// Thick grey borders
+.form-control-checkbox::before,
+.form-control-radio::before,
+.form-select-2,
+textarea.form-control,
+input.form-control{
+  border: 2px solid $border-colour;
+}
+
+.form-control-email{
+  width: 36em;
+}
+
 // Fixed character width form controls
 .form-control-1-char    {	width: 1.5em }
 .form-control-2-chars   {	width: 2.4em }
@@ -35,21 +48,6 @@ fieldset.inline,
     clear: none;
   }
 }
-
-
-// Thick grey borders
-.form-control-checkbox::before,
-.form-control-radio::before,
-.form-select-2,
-textarea.form-control,
-input.form-control{
-  border: 2px solid $border-colour;
-}
-
-.form-control-email{
-  width: 36em;
-}
-
 
 // Margins for left or right aligned labels
 

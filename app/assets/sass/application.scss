@@ -4,8 +4,6 @@
 
 // Import modules specific to this service
 
-@import "modules/shame";
-@import "modules/for-elements";
 @import "modules/search-and-breadcrumb";
 @import "modules/form-navigation";
 @import "modules/other-specify";
@@ -13,5 +11,13 @@
 
 
 .apply-2{
+	@import "modules/shame";
+	@import "modules/for-elements";
 	@import "modules/radios-and-checkboxes";
+}
+
+.apply-1 .or{ 
+  float: left;
+  clear: left;
+  padding: 15px 0 0 0;
 }
