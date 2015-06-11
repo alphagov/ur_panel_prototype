@@ -1,0 +1,37 @@
+{{<templates/layout-question}}
+
+{{$bodyClasses}}version-3{{/bodyClasses}}
+
+{{$pageTitle}}
+  Do you regularly use GOV.UK for work?
+{{/pageTitle}}
+
+{{$questionNumber}}4{{/questionNumber}}
+{{$prevURL}}country-live{{/prevURL}}
+{{$nextURL}}confirmation{{/nextURL}}
+
+{{$questionContent}}
+
+	<p>For example to check rules or laws relevant to your work.</p>
+
+ 	<div class="form-group">
+		<p class="form-hint">Select one:</p>
+	    <div class="form-group">
+	    	<input type="radio" id="use-govuk-1" name="use-govuk"> 
+	      <label class="form-label form-control-radio" for="use-govuk-1">
+	      	Yes
+	      </label>
+	      <input type="radio" id="use-govuk-2" name="use-govuk"> 
+	      <label class="form-label form-control-radio" for="use-govuk-2">
+	      	No
+	      </label>
+	      <input type="radio" id="use-govuk-3" name="use-govuk"> 
+	      <label class="form-label form-control-radio" for="use-govuk-3">
+	      	Prefer not to say
+	      </label>
+	    </div>
+	</div>
+
+{{/questionContent}}
+
+{{/templates/layout-question}}

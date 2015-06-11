@@ -1,0 +1,35 @@
+{{<templates/layout-question}}
+
+{{$bodyClasses}}version-1{{/bodyClasses}}
+
+{{$pageTitle}}
+  How old are the children in your household?
+{{/pageTitle}}
+
+{{$questionNumber}}12{{/questionNumber}}
+{{$prevURL}}children-under-18{{/prevURL}}
+{{$nextURL}}employment{{/nextURL}}
+
+{{$questionContent}}
+
+	<div class="form-group">
+		<p class="form-hint">Select all that apply:</p>
+	    <div class="form-group">
+	      <label class="block-label" for="age-1">
+	    	<input type="checkbox" id="age-1"> 
+	      	under 5 years old
+	      </label>
+	      <label class="block-label" for="age-2">
+	      <input type="checkbox" id="age-2"> 
+	      	5 - 11 years old
+	      </label>
+	      <label class="block-label" for="age-3">
+	      <input type="checkbox" id="age-3"> 
+	      	12 - 18 years old
+	      </label>
+	    </div>
+	</div>
+
+{{/questionContent}}
+
+{{/templates/layout-question}}

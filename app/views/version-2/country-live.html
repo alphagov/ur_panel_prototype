@@ -1,0 +1,26 @@
+{{<templates/layout-question}}
+
+{{$bodyClasses}}version-2{{/bodyClasses}}
+
+{{$pageTitle}}
+  Which country do you live in?
+{{/pageTitle}}
+
+{{$questionNumber}}7{{/questionNumber}}
+{{$prevURL}}gender{{/prevURL}}
+{{$nextURL}}speak-english{{/nextURL}}
+
+{{$questionContent}}
+
+	<div class="form-group">
+	    <div class="form-group">
+	      <label class="form-label" for="country-selector">
+	      	Enter a country
+	      </label>
+	      {{>includes/country_selector}}
+	    </div>
+	</div>
+
+{{/questionContent}}
+
+{{/templates/layout-question}}

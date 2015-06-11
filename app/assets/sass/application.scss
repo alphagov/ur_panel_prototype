@@ -10,14 +10,34 @@
 @import "modules/auto-suggest";
 
 
-.apply-2{
+.version-2,
+.version-3{
 	@import "modules/shame";
 	@import "modules/for-elements";
 	@import "modules/radios-and-checkboxes";
 }
 
-.apply-1 .or{ 
+.version-1 .or{ 
   float: left;
   clear: left;
   padding: 15px 0 0 0;
+}
+
+.version-3{
+	.question-number{
+		display: none;
+	}
+}
+
+
+.prototype-meta{
+	@extend %contain-floats;
+	dt{
+		float: left;
+		width: 10%;
+	}
+	dd{
+		float: left;
+		width: 90%
+	}
 }
