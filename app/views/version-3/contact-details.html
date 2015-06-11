@@ -7,7 +7,7 @@
 {{/pageTitle}}
 
 {{$questionNumber}}2{{/questionNumber}}
-{{$prevURL}}age{{/prevURL}}
+{{$prevURL}}name{{/prevURL}}
 {{$nextURL}}country-live{{/nextURL}}
 
 {{$questionContent}}
@@ -15,20 +15,34 @@
  <p class="text">We’ll only use this information to contact you with research opportunities relevant to you. We won’t share it with <br>anyone else
   and you can leave the panel at any time.</p>
 
-  <div class="form-group">
-      <label class="form-label" for="full-name">Full name</label>
-      <input type="text" class="form-control form-control-1-1" id="full-name">
-    </div>
 
-    <div class="form-group">
-      <label class="form-label" for="email">Email address</label>
+  <div class="form-group">
+
+    <input type="radio" id="preferred-contact-1" name="preferred-contact" value="preferred-contact-1" class="js-toggle" data-show="#contact-email" data-hide="#contact-phone"> 
+    <label class="form-label form-control-radio" for="preferred-contact-1">
+      Contact me by email
+    </label>
+
+    <input type="radio" id="preferred-contact-2" name="preferred-contact" value="preferred-contact-2" class="js-toggle" data-show="#contact-phone" data-hide="#contact-email"> 
+    <label class="form-label form-control-radio" for="preferred-contact-2">
+      Contact me by phone
+    </label>
+
+    
+  </div>
+
+
+    <div class="form-group js-hidden" id="contact-email">
+      <label class="form-label" for="email">Enter email address</label>
       <input type="text" class="form-control form-control-1-1" id="email">
     </div>
 
-    <div class="form-group">
-      <label class="form-label" for="tel">Home or mobile phone number</label>
+    <div class="form-group js-hidden" id="contact-phone">
+      <label class="form-label" for="tel">Enter phone number</label>
       <input type="text" class="form-control form-control-1-3" id="tel">
     </div>
+
+
 
 {{/questionContent}}
 
