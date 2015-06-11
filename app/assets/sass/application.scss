@@ -41,3 +41,19 @@
 		width: 90%
 	}
 }
+
+.prototype-list{
+	.title{
+		width: 33.33%;
+	}
+	.date{
+		width: 33.33%;
+	}
+	.notes{
+		width: 33.33%;
+	}
+	td{
+		padding-top: 15px;
+		vertical-align: top;
+	}
+}
