@@ -32,6 +32,7 @@
 
 .prototype-meta{
 	@extend %contain-floats;
+	margin-bottom: $gutter;
 	dt{
 		float: left;
 		width: 10%;
