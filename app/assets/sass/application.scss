@@ -11,19 +11,24 @@
 
 
 .version-2,
-.version-3{
+.version-3,
+.version-4{
 	@import "modules/shame";
 	@import "modules/for-elements";
-	@import "modules/radios-and-checkboxes";
 }
 
-.version-1 .or{ 
+.version-2,
+.version-3{
+  @import "modules/radios-and-checkboxes";
+}
+
+.version-1 .or{
   float: left;
   clear: left;
   padding: 15px 0 0 0;
 }
 
-.version-3{
+.version-3 {
 	.question-number{
 		display: none;
 	}
