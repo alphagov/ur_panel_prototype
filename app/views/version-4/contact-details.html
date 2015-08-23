@@ -1,0 +1,43 @@
+{{<templates/layout-question}}
+
+{{$bodyClasses}}version-4{{/bodyClasses}}
+
+{{$pageTitle}}
+  How can we contact you?
+{{/pageTitle}}
+
+{{$questionNumber}}3{{/questionNumber}}
+{{$prevURL}}name{{/prevURL}}
+{{$nextURL}}how-often-contact{{/nextURL}}
+
+{{$questionContent}}
+
+ <p class="text">We’ll only use this information to contact you with research opportunities relevant to you. We won’t share it with <br>anyone else
+  and you can leave the panel at any time.</p>
+
+  <div class="form-group">
+    <label class="form-label" for="email">Email address</label>
+    <input type="text" class="form-control form-control-1-1" id="email">
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="tel">Phone number</label>
+    <input type="text" class="form-control form-control-1-2" id="tel">
+  </div>
+
+  <label class="form-label">How would you prefer to be contacted?</label>
+  <div class="form-group inline">
+    <label class="block-label" for="preferred-contact-1">
+      <input type="radio" id="preferred-contact-1" name="preferred-contact" value="preferred-contact-1">
+      Email
+    </label>
+
+    <label class="block-label" for="preferred-contact-2">
+      <input type="radio" id="preferred-contact-2" name="preferred-contact" value="preferred-contact-2">
+      Phone
+    </label>
+  </div>
+
+{{/questionContent}}
+
+{{/templates/layout-question}}
