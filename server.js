@@ -1,5 +1,6 @@
 var path = require('path'),
     express = require('express'),
+    flash = require('connect-flash');
     routes = require(__dirname + '/app/routes.js'),
     app = express(),
     port = (process.env.PORT || 3000),
@@ -7,7 +8,7 @@ var path = require('path'),
 // Grab environment variables specified in Procfile or as Heroku config vars
     username = process.env.USERNAME,
     password = process.env.PASSWORD,
-    env = process.env.NODE_ENV || 'development';
+    env = process.env.NODE_ENV || 'development'
 
 // Authenticate against the environment-provided credentials, if running
 // the app in production (Heroku, effectively)
@@ -29,6 +30,7 @@ app.set('views', __dirname + '/app/views');
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_template/assets'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_frontend_toolkit'));
+app.use(express.urlencoded()); // So you can read posted forms
 
 app.use(express.favicon(path.join(__dirname, 'govuk_modules', 'govuk_template', 'assets', 'images','favicon.ico'))); 
 

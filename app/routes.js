@@ -103,5 +103,23 @@ module.exports = {
         }
     }); 
 
+    // POSTS
+
+/*
+    app.post('/gender', function(req, res){
+      var genderChoice = req.body['gender'];
+      console.log('genderChoice:', genderChoice);
+
+      req.flash('genderChoice', genderChoice);
+      res.redirect('/next/page/');
+
+    });
+    app.get('/next/page', function (req, res) {
+      var genderChoice = req.flash('genderChoice');
+
+      res.render('view', {genderChoice : genderChoice})
+    }); 
+*/
+
   }
 };
