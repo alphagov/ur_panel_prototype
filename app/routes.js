@@ -37,7 +37,7 @@ module.exports = {
           default     :   res.render('version-1/children-under-18');
         }
     });
-    
+
     // Employment
     app.get('/version-1/confirmation', function (req, res) {
 
@@ -52,7 +52,7 @@ module.exports = {
 
 
     // ROUTES - V2
- 
+
     // Age
     app.get('/version-2/age', function (req, res) {
       switch (req.query['age16']){
@@ -79,7 +79,7 @@ module.exports = {
           default     :   res.render('version-2/children-under-18');
         }
     });
-    
+
     // Employment
     app.get('/version-2/confirmation', function (req, res) {
 
@@ -89,11 +89,11 @@ module.exports = {
         res.render('version-2/confirmation');
       }
 
-    });   
+    });
 
 
     // ROUTES - V3
- 
+
     // Age
     app.get('/version-3/age', function (req, res) {
       switch (req.query['age16']){
@@ -101,7 +101,19 @@ module.exports = {
           case 'age16-2'  :   res.redirect('version-3/ineligible');
           default     :   res.render('version-3/age');
         }
-    }); 
+    });
+
+
+    // ROUTES - V4
+
+    // Age
+    app.get('/version-4/age', function (req, res) {
+      switch (req.query['age']){
+          case req >= 16  :   res.redirect('version-4/contact-details');
+          case req < 16   :   res.redirect('version-4/ineligible');
+          default     :   res.render('version-4/age');
+        }
+    });
 
     // POSTS
 
