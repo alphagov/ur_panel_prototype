@@ -1,15 +1,15 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
 
-{{$pageTitle}}
+{% block page_title %}
   Where do you normally access the internet?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}4{{/questionNumber}}
-{{$prevURL}}use-devices{{/prevURL}}
-{{$nextURL}}internet-adjustments{{/nextURL}}
+{% block question_number %}4{% endblock %}
+{% block previous_url %}use-devices{% endblock %}
+{% block next_url %}internet-adjustments{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
 		<p class="form-hint">Select all that apply:</p>
@@ -48,7 +48,7 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+
 

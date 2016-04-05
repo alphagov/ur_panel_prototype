@@ -1,14 +1,14 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$pageTitle}}
+{% block page_title %}
   Do you currently receive any government benefits?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}10{{/questionNumber}}
-{{$prevURL}}children-age{{/prevURL}}
-{{$nextURL}}employment{{/nextURL}}
+{% block question_number %}10{% endblock %}
+{% block previous_url %}children-age{% endblock %}
+{% block next_url %}employment{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
 	<p>For example housing benefit or child benefit.</p>
 
@@ -30,7 +30,7 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+
 

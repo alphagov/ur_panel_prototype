@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-1{{/bodyClasses}}
+{% block body_classes %}version-1{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   What is your job title?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}15{{/questionNumber}}
-{{$prevURL}}employment-sector{{/prevURL}}
-{{$nextURL}}use-govuk{{/nextURL}}
+{% block question_number %}15{% endblock %}
+{% block previous_url %}employment-sector{% endblock %}
+{% block next_url %}use-govuk{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
  		<p class="form-hint">For example, builder, nurse or shop assistant</p>
@@ -22,6 +22,6 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+

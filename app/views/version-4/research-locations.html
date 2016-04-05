@@ -1,36 +1,36 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-4{{/bodyClasses}}
+{% block body_classes %}version-4{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   What kinds of research are you willing to take part in?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}5{{/questionNumber}}
-{{$prevURL}}contact-details{{/prevURL}}
-{{$nextURL}}confirmation{{/nextURL}}
+{% block question_number %}5{% endblock %}
+{% block previous_url %}contact-details{% endblock %}
+{% block next_url %}confirmation{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
 	<div class="form-group">
 		<p class="form-hint">Select all that apply:</p>
 	    <div class="form-group">
 	      <label class="block-label" for="research-locations-1">
-	    	<input type="checkbox" id="research-locations-1" name="research-locations-1">
-	      	I’m willing to visit a government building in a city near where I live to participate in a study
+		<input type="checkbox" id="research-locations-1" name="research-locations-1">
+		I’m willing to visit a government building in a city near where I live to participate in a study
 	      </label>
 	      <label class="block-label" for="research-locations-2">
-	      	<input type="checkbox" id="research-locations-2" name="research-locations-2">
-	      	I’m willing to participate in a study remotely using my computer and phone
+		<input type="checkbox" id="research-locations-2" name="research-locations-2">
+		I’m willing to participate in a study remotely using my computer and phone
 	      </label>
 	      <label class="block-label" for="research-locations-3">
-	      	<input type="checkbox" id="research-locations-3" name="research-locations-3">
-	      	I’m willing to have a GOV.UK researcher come visit me
+		<input type="checkbox" id="research-locations-3" name="research-locations-3">
+		I’m willing to have a GOV.UK researcher come visit me
 	      </label>
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+
 

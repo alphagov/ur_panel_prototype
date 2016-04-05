@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-1{{/bodyClasses}}
+{% block body_classes %}version-1{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   What is your housing situation?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}10{{/questionNumber}}
-{{$prevURL}}speak-english-confidence{{/prevURL}}
-{{$nextURL}}children-under-18{{/nextURL}}
+{% block question_number %}10{% endblock %}
+{% block previous_url %}speak-english-confidence{% endblock %}
+{% block next_url %}children-under-18{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
 		<p class="form-hint">Select one:</p>
@@ -56,6 +56,6 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+

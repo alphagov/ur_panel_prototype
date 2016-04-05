@@ -1,14 +1,14 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$pageTitle}}
+{% block page_title %}
   What is your marital status?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}7{{/questionNumber}}
-{{$prevURL}}housing{{/prevURL}}
-{{$nextURL}}children-under-18{{/nextURL}}
+{% block question_number %}7{% endblock %}
+{% block previous_url %}housing{% endblock %}
+{% block next_url %}children-under-18{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
 		<p class="form-hint">Select one:</p>
@@ -60,7 +60,7 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+
 

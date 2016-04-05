@@ -1,10 +1,10 @@
-{{<govuk_template}}
+{% extends "govuk_template.html" %}
 
-{{$head}}
-  {{>includes/head}}
-{{/head}}
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
 
-{{$insideHeader}}
+{% block inside_header %}
 
 <a href="#search" class="search-toggle js-header-toggle">Search</a>
 <form id="search" class="site-search" action="/search" method="get" role="search">
@@ -14,14 +14,24 @@
 	</div>
  </form>
 
-{{/insideHeader}}
+{% endblock %}
 
-{{$propositionHeader}}
-{{/propositionHeader}}
+{% block proposition_header %}
+{% endblock %}
 
+{% block header_class %}
+  with-proposition
+{% endblock %}
 
-{{$bodyEnd}}
-  {{>includes/scripts}}
-{{/bodyEnd}}
+{% block body_end %}
+  {% include "includes/scripts.html" %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}
 
-{{/govuk_template}}
+{% block footer_support_links %}
+  <ul>
+    <li>
+      <a href="/prototype-admin/clear-data">Clear data</a>
+    </li>
+  </ul>
+{% endblock %}

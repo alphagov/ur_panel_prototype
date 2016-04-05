@@ -1,11 +1,10 @@
-{{<templates/layout-cabinet-office}}
+{% extends "templates/layout-cabinet-office.html" %}
 
-{{$pageTitle}}
-	GOV.UK prototype
-{{/pageTitle}}
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
 
-{{$content}}
-
+{% block content %}
 
 <main id="content" role="main">
 
@@ -33,7 +32,7 @@
 					<th class="notes"></th>
 				</tr>
         <tr>
-          <td><a href="version-4/">Prototype 4</a></td>
+          <td><a href="/version-4">Prototype 4</a></td>
           <td>Not yet tested</td>
           <td>
             <details>
@@ -45,7 +44,7 @@
           </td>
         </tr>
 				<tr>
-					<td><a href="version-3/">Prototype 3</a></td>
+					<td><a href="/version-3">Prototype 3</a></td>
 					<td>Tested – date?</td>
 					<td>
 						<details>
@@ -59,7 +58,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td><a href="version-2/">Prototype 2</a></td>
+					<td><a href="/version-2">Prototype 2</a></td>
 					<td>Tested 9 June 2015</td>
 					<td>
 						<details>
@@ -71,7 +70,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td><a href="version-1/">Prototype 1</a></td>
+					<td><a href="/version-1">Prototype 1</a></td>
 					<td>Tested 9 June 2015</td>
 					<td>
 						<details>
@@ -93,6 +92,4 @@
 
 </main>
 
-{{/content}}
-
-{{/templates/layout-cabinet-office}}
+{% endblock %}

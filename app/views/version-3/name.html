@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-3{{/bodyClasses}}
+{% block body_classes %}version-3{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   What's your name?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}2{{/questionNumber}}
-{{$prevURL}}age{{/prevURL}}
-{{$nextURL}}contact-details{{/nextURL}}
+{% block question_number %}2{% endblock %}
+{% block previous_url %}age{% endblock %}
+{% block next_url %}contact-details{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
 
   <div class="form-group">
@@ -18,6 +18,6 @@
     <input type="text" class="form-control form-control-1-1" id="full-name">
   </div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+

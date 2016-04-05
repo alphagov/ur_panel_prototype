@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-2{{/bodyClasses}}
+{% block body_classes %}version-2{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   How confident are you in reading and writing in English on government websites?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}9{{/questionNumber}}
-{{$prevURL}}speak-english{{/prevURL}}
-{{$nextURL}}housing{{/nextURL}}
+{% block question_number %}9{% endblock %}
+{% block previous_url %}speak-english{% endblock %}
+{% block next_url %}housing{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
 		<p class="form-hint">Select one:</p>
@@ -26,6 +26,5 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}

@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-1{{/bodyClasses}}
+{% block body_classes %}version-1{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   Do you regularly use GOV.UK for work?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}16{{/questionNumber}}
-{{$prevURL}}employment-job-title{{/prevURL}}
-{{$nextURL}}confirmation{{/nextURL}}
+{% block question_number %}16{% endblock %}
+{% block previous_url %}employment-job-title{% endblock %}
+{% block next_url %}confirmation{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
 	<p>For example to check rules or laws relevant to your work.</p>
 
@@ -32,6 +32,6 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+
