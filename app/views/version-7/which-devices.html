@@ -1,0 +1,47 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+  Which devices do you regularly use to access the internet?
+{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}postcode{% endblock %}
+{% block next_url %}check-answers{% endblock %}
+
+{% block question_content %}
+
+	<div class="form-group">
+		<p class="form-hint">Select all that apply:</p>
+	    <div class="form-group">
+		<input type="checkbox" name="use_device_1" id="use_device_1"> 
+	      <label class="form-label form-control-checkbox" for="use_device_1">
+		Desktop computer
+	      </label>
+	      <input type="checkbox" name="use_device_2" id="use_device_2"> 
+	      <label class="form-label form-control-checkbox" for="use_device_2">
+		Laptop computer
+	      </label>
+	      <input type="checkbox" name="use_device_3" id="use_device_3"> 
+	      <label class="form-label form-control-checkbox" for="use_device_3">
+		Tablet (eg. iPad)
+	      </label>
+	      <input type="checkbox" name="use_device_4" id="use_device_4"> 
+	      <label class="form-label form-control-checkbox" for="use_device_4">
+		Smartphone (eg. iPhone, Samsung Galaxy)
+	      </label>
+	      <input type="checkbox" name="use_device_5" id="use_device_5"> 
+	      <label class="form-label form-control-checkbox" for="use_device_5">
+		Other:
+	      </label>
+
+	      <label class="visuallyhidden" for="other">Please specify</label>
+	      <input class="form-control other-specify" type="text" id="other" name="use_device_freetext">
+
+	    </div>
+	</div>
+
+{% endblock %}
+
+

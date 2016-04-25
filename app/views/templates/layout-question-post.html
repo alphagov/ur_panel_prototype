@@ -20,16 +20,17 @@
 		<div class="column-two-thirds">
 
 			<p class="form-navigation">
-				{% if previous_url %}
-				<a class="back-to-previous" href="{% block previous_url %}{% endblock %}">Back <span class="visuallyhidden"> to the previous question.</span></a>
-				{% endif %}
+					<a class="back-to-previous" href="{% block previous_url %}{% endblock %}">
+						Back
+						<span class="visuallyhidden"> to the previous question.</span>
+					</a>
 				{% if question_number %}<span class="question-number">Question {% block question_number %}{% endblock %} of 5</span>{% endif %}
 				
 			</p>
 
 			<h1 class="heading-large">{% block page_title %}{% endblock %}</h1>
 
-			<form action="{% block next_url %}{% endblock %}" method="get" class="form">
+			<form action="{% block next_url %}{% endblock %}" method="post" class="form">
 
 				{% block question_content %}
 				{% endblock %}

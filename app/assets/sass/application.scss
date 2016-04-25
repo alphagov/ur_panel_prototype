@@ -41,13 +41,19 @@
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 .version-2,
 .version-3,
-.version-4{
+.version-4,
+.version-5,
+.version-6,
+.version-7{
   @import "modules/shame";
   @import "modules/for-elements";
 }
 
 .version-2,
-.version-3{
+.version-3,
+.version-5,
+.version-6,
+.version-7{
   @import "modules/radios-and-checkboxes";
 }
 
@@ -91,4 +97,12 @@
     padding-top: 15px;
     vertical-align: top;
   }
+}
+
+strong {
+  font-weight: 700;
+}
+
+.form-label-content {
+  // display: -webkit-box;
 }

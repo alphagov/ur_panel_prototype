@@ -1,0 +1,47 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-5{% endblock %}
+
+{% block page_title %}
+Which devices do you use at least once a week?
+{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}internet-usage{% endblock %}
+{% block next_url %}adjustments{% endblock %}
+
+{% block question_content %}
+
+<div class="form-group">
+  <p class="form-hint">Select all that apply:</p>
+  <div class="form-group">
+    <input type="checkbox" id="use-device-1"> 
+    <label class="form-label form-control-checkbox" for="use-device-1">
+      Desktop computer
+    </label>
+    <input type="checkbox" id="use-device-2"> 
+    <label class="form-label form-control-checkbox" for="use-device-2">
+      Laptop computer
+    </label>
+    <input type="checkbox" id="use-device-3"> 
+    <label class="form-label form-control-checkbox" for="use-device-3">
+      Tablet (eg. iPad)
+    </label>
+    <input type="checkbox" id="use-device-4"> 
+    <label class="form-label form-control-checkbox" for="use-device-4">
+      Smartphone (eg. iPhone, Samsung Galaxy)
+    </label>
+    <input type="checkbox" id="use-device-5"> 
+    <label class="form-label form-control-checkbox" for="use-device-5">
+      Other:
+    </label>
+
+    <label class="visuallyhidden" for="other">Please specify</label>
+    <input class="form-control other-specify" type="text" id="other">
+
+  </div>
+</div>
+
+{% endblock %}
+
+

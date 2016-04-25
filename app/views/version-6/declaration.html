@@ -1,0 +1,30 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-6{% endblock %}
+
+{% block page_title %}
+Declaration
+{% endblock %}
+
+{% block previous_url %}check-answers{% endblock %}
+{# {% set previous_url="check-answers" %} #}
+{% block next_url %}thank-you{% endblock %}
+{% block continue_button_text %}Send application{% endblock %}
+
+{% block question_content %}
+
+<p>By sending this application, you agree:</p>
+<ul class="list list-bullet">
+	<li>thing</li>
+	<li>thing</li>
+</ul>
+
+<div class="form-group">
+	<input type="checkbox" id="declaration" name="declaration"> 
+	<label class="form-label form-control-checkbox" for="declaration">
+		I agree
+	</label>
+</div>
+
+{% endblock %}
+

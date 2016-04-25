@@ -40,6 +40,20 @@ nunjucks.setup({
   noCache: true
 }, app);
 
+nunjucks.ready(function(env) {
+    // First custom filter.
+    env.addFilter('string_month', function(month_string) {
+      var month = parseInt(month_string) - 1;
+      if (month < 13 && month > -1){
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        return monthNames[parseInt(month)];
+      }
+      else {
+        return "";
+      }
+    });
+});
+
 // Middleware to serve static assets
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + '/govuk_modules/govuk_template/assets'));

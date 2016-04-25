@@ -1,0 +1,22 @@
+{% extends "templates/layout-question.html" %}
+
+{% block body_classes %}version-5{% endblock %}
+
+{% block page_title %}
+  Email address confirmed
+{% endblock %}
+
+{% block next_url %}date-of-birth{% endblock %}
+{% block continue_button_text %}Continue signing up{% endblock %}
+
+
+{% block question_content %}
+
+<p>You've confirmed <strong>{{email}}</strong> as your email address.</p>
+
+<p class="text">You can cancel or unsubscribe at any time by clicking the 'unsubscribe' link in the email.</p>
+
+
+{% endblock %}
+
+
