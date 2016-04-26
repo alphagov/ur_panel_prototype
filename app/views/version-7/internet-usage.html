@@ -1,14 +1,14 @@
 {% extends "templates/layout-question-post.html" %}
 
-{% block body_classes %}version-5{% endblock %}
+{% block body_classes %}version-7{% endblock %}
 
 {% block page_title %}
-Have you done any of the following in the last month?
+Which of the following would you be willing to do online?
 {% endblock %}
 
 {% block question_number %}3{% endblock %}
-{% block previous_url %}postcode{% endblock %}
-{% block next_url %}devices{% endblock %}
+{% block previous_url %}where-access{% endblock %}
+{% block next_url %}check-answers{% endblock %}
 
 {% block question_content %}
 
@@ -17,7 +17,7 @@ Have you done any of the following in the last month?
   <div class="form-group">
     <input type="checkbox" id="internet_usage_1" name="internet_usage_1"> 
     <label class="form-label form-control-checkbox" for="internet_usage_1">
-      Bought something online
+      Buy something online (eg. food, clothes, electronics)
     </label>
     <input type="checkbox" id="internet_usage_2" name="internet_usage_2"> 
     <label class="form-label form-control-checkbox" for="internet_usage_2">
@@ -25,14 +25,18 @@ Have you done any of the following in the last month?
     </label>
     <input type="checkbox" id="internet_usage_3" name="internet_usage_3"> 
     <label class="form-label form-control-checkbox" for="internet_usage_3">
-      Used an online government service
+      Buy tickets (eg. cinema or theatre tickets)
     </label>
     <input type="checkbox" id="internet_usage_4" name="internet_usage_4"> 
     <label class="form-label form-control-checkbox" for="internet_usage_4">
-      Other regular internet usage
+      Book hotels or flights
     </label>
     <input type="checkbox" id="internet_usage_5" name="internet_usage_5"> 
-    {# <label class="form-label form-control-checkbox" for="internet_usage_5">
+    <label class="form-label form-control-checkbox" for="internet_usage_5">
+      Use a government service (eg. tax return, car tax payment, renew passport)
+    </label>
+    {# <input type="checkbox" id="internet_usage_5" name="internet_usage_5"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_5">
       Other:
     </label>
 

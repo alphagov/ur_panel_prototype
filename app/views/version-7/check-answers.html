@@ -78,6 +78,19 @@ Check your answers
             </tr>
             <tr>
               <td>
+                Gender
+              </td>
+              <td>
+                {{gender}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> gender</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
                 Location
               </td>
               <td>
@@ -157,10 +170,84 @@ Check your answers
               </td>
               <td class="change-answer">
                 <a href="#">
-                  Change<span class="visuallyhidden"> your postcode</span>
+                  Change<span class="visuallyhidden"> which devices you use</span>
                 </a>
               </td>
             </tr>
+            <tr>
+              <td>
+                How often you use the internet
+              </td>
+              <td>
+                {{how_often}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> how often you use the internet</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Where you access the internet
+              </td>
+              <td>
+                {% if access_internet_1 %}
+                  Home<br>
+                {% endif %}
+                {% if access_internet_2 %}
+                  Work<br>
+                {% endif %}
+                {% if access_internet_3 %}
+                  School or university<br>
+                {% endif %}
+                {% if access_internet_4 %}
+                  Public place (eg. library or cafe)<br>
+                {% endif %}
+                {% if access_internet_5 %}
+                  Family or friend's house<br>
+                {% endif %}
+                {% if access_internet_6 %}
+                  Mobile (out and about)<br>
+                {% endif %}
+                {% if access_internet_7 %}
+                  Other: {{access_internet_7}}
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> where you access the internet</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Online activities you're willing to do
+              </td>
+              <td>
+                {% if internet_usage_1 %}
+                  Buy something online<br>
+                {% endif %}
+                {% if internet_usage_2 %}
+                  Online banking<br>
+                {% endif %}
+                {% if internet_usage_3 %}
+                  Buy tickets<br>
+                {% endif %}
+                {% if internet_usage_4 %}
+                  Book hotels or flights<br>
+                {% endif %}
+                {% if internet_usage_5 %}
+                  Use a government service<br>
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> your recent internet activites</span>
+                </a>
+              </td>
+            </tr>
+
 
           </tbody>
         </table>

@@ -1,6 +1,6 @@
 {% extends "templates/layout-question-post.html" %}
 
-{% block body_classes %}version-5{% endblock %}
+{% block body_classes %}version-7{% endblock %}
 
 {% block page_title %}
   What is your gender?
@@ -15,15 +15,15 @@
 	<div class="form-group">
 		<p class="form-hint">Select one:</p>
 	    <div class="form-group">
-		<input type="radio" id="gender-female" name="gender"> 
-	      <label class="form-label form-control-radio" for="gender-female">
+		<input type="radio" id="gender-female" name="gender" value="Female"> 
+	      <label class="form-label form-control-radio" for="gender-female" >
 		female
 	      </label>
-	      <input type="radio" id="gender-male" name="gender"> 
+	      <input type="radio" id="gender-male" name="gender" value="Male"> 
 	      <label class="form-label form-control-radio" for="gender-male">
 		male
 	      </label>
-	      <input type="radio" id="gender-unspecified" name="gender"> 
+	      <input type="radio" id="gender-unspecified" name="gender" value="Unspecified"> 
 	      <label class="form-label form-control-radio" for="gender-unspecified">
 		unspecified
 	      </label>
