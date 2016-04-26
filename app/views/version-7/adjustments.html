@@ -3,11 +3,11 @@
 {% block body_classes %}version-7{% endblock %}
 
 {% block page_title %}
-What adjustments do you make to help you use the internet?
+Do you need any software or equipment beyond a laptop, mobile phone or tablet to help you use the internet?
 {% endblock %}
 
 {% block question_number %}5{% endblock %}
-{% block previous_url %}devices{% endblock %}
+{% block previous_url %}internet-usage{% endblock %}
 {% block next_url %}check-answers{% endblock %}
 
 {% block question_content %}
@@ -15,39 +15,39 @@ What adjustments do you make to help you use the internet?
 <div class="form-group">
   <p class="form-hint">Select all that apply:</p>
   <div class="form-group">
-    <input type="checkbox" id="access-internet-1"> 
+    <input type="checkbox" name="access_internet_1" id="access-internet-1"> 
     <label class="form-label form-control-checkbox" for="access-internet-1">
-      Wear glasses
+      Screen magnifier (software that enlarges your screen)
     </label>
-    <input type="checkbox" id="access-internet-2"> 
+    <input type="checkbox" name="access_internet_2" id="access-internet-2"> 
     <label class="form-label form-control-checkbox" for="access-internet-2">
       Screen reader (software that reads out a webpage)
     </label>
-    <input type="checkbox" id="access-internet-3"> 
+    <input type="checkbox" name="access_internet_3" id="access-internet-3"> 
     <label class="form-label form-control-checkbox" for="access-internet-3">
-      Large print
+      Voice control software (control your computer using voice)
     </label>
-    <input type="checkbox" id="access-internet-7"> 
+    <input type="checkbox" name="access_internet_7" id="access-internet-7"> 
     <label class="form-label form-control-checkbox" for="access-internet-7">
-      Tinted glasses
+      Adjust colours / contrast on webpages
     </label>
-    <input type="checkbox" id="access-internet-4"> 
+   {#  <input type="checkbox" name="access_internet_4" id="access-internet-4"> 
     <label class="form-label form-control-checkbox" for="access-internet-4">
       Hearing aid
     </label>
-    <input type="checkbox" id="access-internet-5"> 
+    <input type="checkbox" name="access_internet_5" id="access-internet-5"> 
     <label class="form-label form-control-checkbox" for="access-internet-5">
       Induction loop
-    </label>
-    <input type="checkbox" id="access-internet-6"> 
+    </label> #}
+    <input type="checkbox" name="access_internet_6" id="access-internet-6"> 
     <label class="form-label form-control-checkbox" for="access-internet-6">
       Other:
     </label>
 
     <label class="visuallyhidden" for="other">Please specify</label>
-    <input class="form-control other-specify" type="text" id="other">
+    <input class="form-control other-specify" type="text" id="other" name="access_internet_9">
 
-    <input type="checkbox" id="access-internet-8"> 
+    <input type="checkbox" name="access_internet_8" id="access-internet-8"> 
     <label class="form-label form-control-checkbox" for="access-internet-8">
       None of the above
     </label>

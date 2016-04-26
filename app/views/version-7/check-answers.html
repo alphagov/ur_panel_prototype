@@ -9,7 +9,7 @@ Check your answers
 <main id="content" role="main">
 
   <p class="form-navigation">
-    <a class="back-to-previous" href="postcode">
+    <a class="back-to-previous" href="adjustments">
       Back
       <span class="visuallyhidden"> to the previous question.</span>
     </a>
@@ -244,6 +244,36 @@ Check your answers
               <td class="change-answer">
                 <a href="#">
                   Change<span class="visuallyhidden"> your recent internet activites</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Extra equipment or software
+              </td>
+              <td>
+                {% if access_internet_1 %}
+                  Screen magnifier<br>
+                {% endif %}
+                {% if access_internet_2 %}
+                  Screen reader<br>
+                {% endif %}
+                {% if access_internet_3 %}
+                  Voice control software<br>
+                {% endif %}
+                {% if access_internet_7 %}
+                  Adjust colours / contrast<br>
+                {% endif %}
+                {% if access_internet_9 %}
+                  Other: {{access_internet_9}}<br>
+                {% endif %}
+                {% if access_internet_8 %}
+                  No extra software or equipment<br>
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> software or equipment</span>
                 </a>
               </td>
             </tr>
