@@ -258,7 +258,7 @@ router.post('/version-7/postcode', function (req, res) {
   var research_lab = req.body['research_locations_1'];
   var home_visit = req.body['research_locations_2'];
   if (!research_lab && !home_visit){
-    res.redirect('/version-7/internet-usage');
+    res.redirect('/version-7/which-devices');
   }
   else {
     res.render('version-7/postcode');
