@@ -159,4 +159,8 @@ h2 {
   & :last-child {
     margin-bottom: 0;
   }
+
+  &.banner__side {
+    margin-top: 30px;
+  }
 }
