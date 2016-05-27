@@ -1,0 +1,36 @@
+{% extends "templates/layout-service.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+	Join the GOV.UK research panel
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<p class="form-navigation">
+				<a class="back-to-previous" href="date-of-birth">Back <span class="visuallyhidden"> to the previous question.</span></a>
+			</p>
+
+
+			<h1 class="heading-large">Sorry, you are not old enough to take part in research for GOV.UK</h1>
+
+			<p>You need to be over 17 to take part.</p>
+
+			  <div class="form-group">
+		      <a class="button" href="https://www.gov.uk">Finish</a>
+		    </div>
+
+		</div>
+	</div>
+
+</main>
+
+{% endblock %}
+
+

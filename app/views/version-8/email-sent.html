@@ -1,0 +1,49 @@
+{% extends "templates/layout-service.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}contact{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<p class="form-navigation">
+		<a class="back-to-previous" href="contact">Back <span class="visuallyhidden"> to the previous question.</span></a>
+		
+		{# {% if question_number %}<span class="question-number">Question {% block question_number %}{% endblock %} of 5</span>{% endif %} #}
+		
+	</p>
+	
+
+	<h1 class="heading-large">Check your email</h1>
+
+	<p>We've sent an email to <strong>{{email}}</strong>.</p>
+
+	<p>Open the email to continue signing up.</p>
+
+	<div class="form-group">
+		<details>
+			<summary><span class="summary">I haven't received the email</span></summary>
+			<div class="panel panel-border-narrow">
+				<p>The email should arrive within a few seconds.</p>
+				<p>If it doesn't, check your spam folder and that your email is correct.</p>
+
+				
+				<div class="form-group">
+					<p><input type="submit" class="button next" value="Resend link"> or <a href="email">change email address</a></p>
+				</div>
+				
+			</div>
+		</details>
+	</div>
+
+</main>
+
+
+
+
+{% endblock %}
+
+

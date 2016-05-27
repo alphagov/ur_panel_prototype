@@ -1,0 +1,27 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-5{% endblock %}
+
+{% block page_title %}
+  Which country do you live in?
+{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}gender{% endblock %}
+{% block page_url %}country{% endblock %}
+{% block next_url %}research-types{% endblock %}
+
+{% block question_content %}
+
+	<div class="form-group">
+	    <div class="form-group">
+	      <label class="form-label" for="country-selector">
+	      	Enter a country
+	      </label>
+	      {% include "includes/country_selector.html" %}
+	    </div>
+	</div>
+
+{% endblock %}
+
+

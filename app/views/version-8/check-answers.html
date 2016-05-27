@@ -1,0 +1,303 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Check your answers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <p class="form-navigation">
+    <a class="back-to-previous" href="adjustments">
+      Back
+      <span class="visuallyhidden"> to the previous question.</span>
+    </a>
+  </p>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Check your answers before sending your application
+      </h1>
+
+      <div class="form-group">
+        <table class="check-your-answers">
+
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h2 class="heading-medium">
+                  Your details
+                </h2>
+              </th>
+              <th>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                Full name
+              </td>
+              <td>
+                {{name}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> name</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Email
+              </td>
+              <td>
+                {{email}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> email address</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Date of birth
+              </td>
+              <td>
+                {{dob_day}} {{dob_month | string_month }} {{dob_year}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> date of birth</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gender
+              </td>
+              <td>
+                {{gender}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> gender</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Location
+              </td>
+              <td>
+                {{Country}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> country</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Research type
+              </td>
+              <td>
+                {% if Country == "United Kingdom" %}
+                {% if research_locations_1%}
+                <strong>Visit a government research lab</strong><br>
+                At a government building in a city near you</div><br><br>
+                {% endif %}
+                {% if research_locations_2%}
+                <strong>Have us visit you</strong><br>
+                Have a GOV.UK researcher visit you at home or work<br><br>
+                {% endif %}
+                {% if research_locations_3%}
+                <strong>Online sessions</strong><br>
+                Participate in an online session
+                {% endif %}
+                {% else %}
+                Online sessions
+                {% endif%}
+              </td>
+              <td class="change-answer">
+                {% if Country == "United Kingdom" %}
+                <a href="#">
+                  Change <span class="visuallyhidden"> research types</span>
+                </a>
+                {% endif %}
+              </td>
+            </tr>
+            {% if postcode %}
+            <tr>
+              <td>
+                Postcode
+              </td>
+              <td>
+                {{ postcode | upper }}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> your postcode</span>
+                </a>
+              </td>
+            </tr>
+            {% endif %}
+            <tr>
+              <td>
+                Devices used to access the internet
+              </td>
+              <td>
+                {% if use_device_1 %}
+                  Desktop computer<br>
+                {% endif %}
+                {% if use_device_2 %}
+                  Laptop computer<br>
+                {% endif %}
+                {% if use_device_3 %}
+                  Tablet (eg. iPad)<br>
+                {% endif %}
+                {% if use_device_4 %}
+                  Smartphone (eg. iPhone, Samsung Galaxy)<br>
+                {% endif %}
+                {% if use_device_freetext %}
+                  Other: {{use_device_freetext}}
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> which devices you use</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                How often you use the internet
+              </td>
+              <td>
+                {{how_often}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> how often you use the internet</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Where you access the internet
+              </td>
+              <td>
+                {% if access_internet_1 %}
+                  Home<br>
+                {% endif %}
+                {% if access_internet_2 %}
+                  Work<br>
+                {% endif %}
+                {% if access_internet_6 %}
+                  Mobile (out and about)<br>
+                {% endif %}
+                {% if access_internet_3 %}
+                  School or university<br>
+                {% endif %}
+                {% if access_internet_4 %}
+                  Public place (eg. library or cafe)<br>
+                {% endif %}
+                {% if access_internet_5 %}
+                  Family or friend's house<br>
+                {% endif %}
+                {% if access_internet_7 %}
+                  Other: {{access_internet_7}}
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> where you access the internet</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Online activities you've done in the last month
+              </td>
+              <td>
+                {% if internet_usage_1 %}
+                  Buy something online<br>
+                {% endif %}
+                {% if internet_usage_2 %}
+                  Online banking<br>
+                {% endif %}
+                {% if internet_usage_3 %}
+                  Buy tickets<br>
+                {% endif %}
+                {% if internet_usage_4 %}
+                  Book hotels or flights<br>
+                {% endif %}
+                {% if internet_usage_5 %}
+                  Use a government service<br>
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> your recent internet activites</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Extra equipment or software
+              </td>
+              <td>
+                {% if access_internet_1 %}
+                  Screen magnifier<br>
+                {% endif %}
+                {% if access_internet_2 %}
+                  Screen reader<br>
+                {% endif %}
+                {% if access_internet_3 %}
+                  Voice control software<br>
+                {% endif %}
+                {% if access_internet_7 %}
+                  Adjust colours / contrast<br>
+                {% endif %}
+                {% if access_internet_9 %}
+                  Other: {{access_internet_9}}<br>
+                {% endif %}
+                {% if access_internet_8 %}
+                  No extra software or equipment<br>
+                {% endif %}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change<span class="visuallyhidden"> software or equipment</span>
+                </a>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+      {# <h2 class="heading-medium">Now send your application</h2>
+
+      <p class="text">
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p> #}
+
+      <div class="form-group">
+        <a href="declaration" class="button">Continue</a>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+</main>
+
+{% endblock %}

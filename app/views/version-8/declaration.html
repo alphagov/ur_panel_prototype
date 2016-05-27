@@ -1,0 +1,29 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+Declaration
+{% endblock %}
+
+{% block previous_url %}check-answers{% endblock %}
+{% block next_url %}thank-you{% endblock %}
+{% block continue_button_text %}Send application{% endblock %}
+
+{% block question_content %}
+
+<p>By sending this application, you confirm that:</p>
+<ul class="list list-bullet">
+	<li>the information you've given is correct</li>
+	<li>you agree to the <a href="terms-and-conditions">terms and conditions</a></li>
+</ul>
+
+<div class="form-group">
+	<input type="checkbox" id="declaration" name="declaration"> 
+	<label class="form-label form-control-checkbox" for="declaration">
+		I agree
+	</label>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,42 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+How often do you use the internet?
+{% endblock %}
+
+{% block question_number %}6{% endblock %}
+{% block previous_url %}which-devices{% endblock %}
+{% block next_url %}where-access{% endblock %}
+
+{% block question_content %}
+
+<div class="form-group">
+  <p class="form-hint">Select one:</p>
+  <div class="form-group">
+    <input type="radio" id="how_often_daily" name="how_often" value="Daily"> 
+    <label class="form-label form-control-radio" for="how_often_daily">
+      Very frequently / serveral times a day
+    </label>
+    <input type="radio" id="how_often_day" name="how_often" value="At least once a day"> 
+    <label class="form-label form-control-radio" for="how_often_day">
+      At least once a day
+    </label>
+    <input type="radio" id="how_often_week" name="how_often" value="Several times a week"> 
+    <label class="form-label form-control-radio" for="how_often_week">
+      Several times a week
+    </label>
+    <input type="radio" id="how_often_month" name="how_often" value="Several times a month"> 
+    <label class="form-label form-control-radio" for="how_often_month">
+      Several times a month
+    </label>
+    <input type="radio" id="how_often_monthly" name="how_often" value="Monthly or less"> 
+    <label class="form-label form-control-radio" for="how_often_monthly">
+      Monthly or less
+    </label>
+  </div>
+</div>
+
+{% endblock %}
+

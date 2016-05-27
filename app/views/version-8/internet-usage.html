@@ -1,0 +1,51 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+Have you done any of the following in the last month?
+{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}where-access{% endblock %}
+{% block next_url %}adjustments{% endblock %}
+
+{% block question_content %}
+
+<div class="form-group">
+  <p class="form-hint">Select all that apply:</p>
+  <div class="form-group">
+    <input type="checkbox" id="internet_usage_1" name="internet_usage_1"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_1">
+      Buy something online (eg. food, clothes, electronics)
+    </label>
+    <input type="checkbox" id="internet_usage_2" name="internet_usage_2"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_2">
+      Online banking
+    </label>
+    <input type="checkbox" id="internet_usage_3" name="internet_usage_3"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_3">
+      Buy tickets (eg. cinema or theatre tickets)
+    </label>
+    <input type="checkbox" id="internet_usage_4" name="internet_usage_4"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_4">
+      Book hotels or flights
+    </label>
+    <input type="checkbox" id="internet_usage_5" name="internet_usage_5"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_5">
+      Use a government service (eg. tax return, renew passport, council website)
+    </label>
+    {# <input type="checkbox" id="internet_usage_5" name="internet_usage_5"> 
+    <label class="form-label form-control-checkbox" for="internet_usage_5">
+      Other:
+    </label>
+
+    <label class="visuallyhidden" for="other">Please specify</label>
+    <input class="form-control other-specify" type="text" id="other"> #}
+
+  </div>
+</div>
+
+{% endblock %}
+
+
