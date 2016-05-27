@@ -1,12 +1,12 @@
-{{<templates/layout-govuk}}
+{% extends "templates/layout-govuk.html" %}
 
-{{$bodyClasses}}version-3{{/bodyClasses}}
+{% block body_classes %}version-3{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
 	Take part in GOV.UK user research
-{{/pageTitle}}
+{% endblock %}
 
-{{$content}}
+{% block content %}
 
 <div id="global-breadcrumb" class="header-context">
     <ol role="breadcrumbs" class="group">
@@ -27,9 +27,9 @@
 
 			<p>We’ll contact you no more than once a month to ask you to take part in research and your participation is always voluntary.</p>
 
-			<p><a href="age" class="button">Apply now</a></p>
+			<p><a href="/version-3/age" class="button">Apply now</a></p>
 
-			<p><a href="more">Find out more about what's involved</a><p>
+			<p><a href="/version-3/more">Find out more about what's involved</a><p>
 
 		</div>
 	</div>
@@ -38,6 +38,6 @@
 
 </main>
 
-{{/content}}
+{% endblock %}
 
-{{/templates/layout-govuk}}
+

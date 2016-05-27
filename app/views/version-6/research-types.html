@@ -1,0 +1,100 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-6{% endblock %}
+
+{% block page_title %}
+{% if Country == "United Kingdom" %}
+What kinds of research are you willing to take part in?
+{% else %}
+Research outside of the United Kingdom
+{% endif %}
+{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}country{% endblock %}
+{% block page_url %}research-types{% endblock %}
+{% block next_url %}postcode{% endblock %}
+
+{% block question_content %}
+
+{% if Country == "United Kingdom" %}
+<p class="form-hint">Select all that apply:</p>
+<div class="form-group">
+
+  <input type="checkbox" id="research_locations_1" name="research_locations_1">
+  <label class="form-label form-control-checkbox" for="research_locations_1">
+    <div class="form-label-content"><strong>Visit a government research lab</strong><br>
+      At a government building in a city near you</div>
+    </label>
+    <input type="checkbox" id="research_locations_2" name="research_locations_2">
+    <label class="form-label form-control-checkbox" for="research_locations_2">
+      <div class="form-label-content">
+        <strong>Have us visit you</strong><br>
+        Have a GOV.UK researcher visit you at home or work
+      </div>
+      
+    </label>
+
+    <input type="checkbox" id="research_locations_3" name="research_locations_3">
+    <label class="form-label form-control-checkbox" for="research_locations_3">
+      <div class="form-label-content">
+        <strong>Online sessions</strong><br>
+        Participate in an online session
+      </div>
+      
+    </label>
+
+  </div>
+
+  <div class="form-group">
+    <details>
+      <summary class="summary">Tell me more about the different types of research
+      </summary>
+
+      <div class="panel panel-border-narrow">
+        <p class="lede">There are different types of research that you can get involved in.</p>
+
+        <p>If you do in-person research with us (either at a lab or in your home), you'll receive compensation to cover your time any travel expenses.</p>
+
+        <h2 class="heading-medium">Visit a government research lab</h2>
+
+        <p>Visit research lab near you and have a face-to-face session. You’ll have the chance to try new services and talk to our researchers about how you’ve used government services in the past. These sessions usually last under an hour.</p>
+
+        <h2 class="heading-medium">Have us visit you</h2>
+
+        <p>Our researchers will visit you at home or work to ask you questions about how you use GOV.UK. These interviews usually last under 2 hours.</p>
+
+        <h2 class="heading-medium">Online sessions</h2>
+
+        <p>During online sessions, you’ll be given a task to complete on GOV.UK. You don’t need to travel anywhere for these sessions but you’ll need your own computer, phone or tablet to participate. These sessions usually last 30 minutes.</p>
+      </div>
+
+    </details>
+
+    <details>
+
+      <summary><span class="summary">Will I get paid?</span></summary>
+
+      <div class="panel panel-border-narrow">
+        <p>If you do in-person research with us (either at a lab or in your home), you'll receive compensation to cover your time any travel expenses.</p>
+
+      </div>
+
+    </details>
+  </div>
+  {% else %}
+  <p>As you live outside the United Kingdom the only research you can take part in is online sessions.</p>
+
+  <h2 class="heading-medium">
+    Online sessions
+  </h2>
+
+  <p>During online sessions, you’ll be given a task to complete on GOV.UK. You don’t need to travel anywhere for these sessions but you’ll need your own computer, phone or tablet to participate. These sessions usually last 30 minutes.</p>
+  {% endif %}
+
+
+
+
+  {% endblock %}
+
+

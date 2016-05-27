@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-1{{/bodyClasses}}
+{% block body_classes %}version-1{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
 	Are you 16 or over?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}1{{/questionNumber}}
-{{$prevURL}}/version-1/{{/prevURL}}
-{{$nextURL}}age{{/nextURL}}
+{% block question_number %}1{% endblock %}
+{% block previous_url %}/version-1/{% endblock %}
+{% block next_url %}age{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
   <div class="form-group">
       <div class="form-group inline">
@@ -28,6 +28,6 @@
       </div>
   </div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+

@@ -1,12 +1,12 @@
-{{<templates/layout-service}}
+{% extends "templates/layout-service.html" %}
 
-{{$bodyClasses}}version-4{{/bodyClasses}}
+{% block body_classes %}version-4{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
 	Join the GOV.UK research panel
-{{/pageTitle}}
+{% endblock %}
 
-{{$content}}
+{% block content %}
 
 <main id="content" role="main">
 
@@ -15,6 +15,7 @@
 	<div class="form-group text">
 
 		<p>We’ve received your information and we will be in touch when research relevant to you is happening.</p>
+		<p>We'll email {{email}} when we contact you.</p>
 		<p>You can choose to leave the research panel at any time by going to <a href="/">gov.uk/research-panel</a>.</p>
 
 	</div>
@@ -25,6 +26,6 @@
 
 </main>
 
-{{/content}}
+{% endblock %}
 
-{{/templates/layout-service}}
+

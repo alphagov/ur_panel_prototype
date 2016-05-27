@@ -1,12 +1,12 @@
-{{<templates/layout-service}}
+{% extends "templates/layout-service.html" %}
 
-{{$bodyClasses}}version-3{{/bodyClasses}}
+{% block body_classes %}version-3{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
 	Apply to take part in GOV.UK user research
-{{/pageTitle}}
+{% endblock %}
 
-{{$content}}
+{% block content %}
 
 <main id="content" role="main">
 
@@ -25,6 +25,6 @@
 
 </main>
 
-{{/content}}
+{% endblock %}
 
-{{/templates/layout-service}}
+

@@ -1,16 +1,25 @@
-{{<govuk_template}}
+{% extends "govuk_template.html" %}
 
-{{$head}}
-  {{>includes/head}}
-{{/head}}
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
 
-{{$propositionHeader}}
-{{/propositionHeader}}
+{% block proposition_header %}
+{% endblock %}
 
-{{$headerClass}}with-proposition{{/headerClass}}
+{% block header_class %}
+  with-proposition
+{% endblock %}
 
-{{$bodyEnd}}
-  {{>includes/scripts}}
-{{/bodyEnd}}
+{% block body_end %}
+  {% include "includes/scripts.html" %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}
 
-{{/govuk_template}}
+{% block footer_support_links %}
+  <ul>
+    <li>
+      <a href="/prototype-admin/clear-data">Clear data</a>
+    </li>
+  </ul>
+{% endblock %}

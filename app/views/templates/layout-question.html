@@ -1,16 +1,18 @@
-{{<govuk_template}}
+{% extends "govuk_template.html" %}
 
-{{$head}}
-  {{>includes/head}}
-{{/head}}
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
 
-{{$propositionHeader}}
-  {{>includes/propositional_navigation}}
-{{/propositionHeader}}
+{% block proposition_header %}
+  {% include "includes/propositional_navigation.html" %}
+{% endblock %}
 
-{{$headerClass}}with-proposition{{/headerClass}}
+{% block header_class %}
+  with-proposition
+{% endblock %}
 
-{{$content}}
+{% block content %}
 
 <main id="content" role="main">
 
@@ -18,19 +20,22 @@
 		<div class="column-two-thirds">
 
 			<p class="form-navigation">
-				<a class="back-to-previous" href="{{$prevURL}}{{/prevURL}}">Back <span class="visuallyhidden"> to the previous question.</span></a>
-				<span class="question-number">Question {{$questionNumber}}{{/questionNumber}} of 5</span>
+				{% if previous_url %}
+				<a class="back-to-previous" href="{% block previous_url %}{% endblock %}">Back <span class="visuallyhidden"> to the previous question.</span></a>
+				{% endif %}
+				{% if question_number %}<span class="question-number">Question {% block question_number %}{% endblock %} of 5</span>{% endif %}
+				
 			</p>
 
-			<h1 class="heading-large">{{$pageTitle}}{{/pageTitle}}</h1>
+			<h1 class="heading-large">{% block page_title %}{% endblock %}</h1>
 
-			<form action="{{$nextURL}}{{/nextURL}}" method="get" class="form">
+			<form action="{% block next_url %}{% endblock %}" method="get" class="form">
 
-				{{$questionContent}}
-				{{/questionContent}}
+				{% block question_content %}
+				{% endblock %}
 
 			    <div class="form-group">
-			      <input type="submit" class="button" value="Continue">
+			      <input type="submit" class="button" value="{% block continue_button_text %}Continue{% endblock %}">
 			    </div>
 
 			</form>
@@ -40,11 +45,17 @@
 
 </main>
 
-{{/content}}
+{% endblock %}
 
-{{$bodyEnd}}
-  {{>includes/scripts}}
-{{/bodyEnd}}
+{% block body_end %}
+  {% include "includes/scripts.html" %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}
 
-
-{{/govuk_template}}
+{% block footer_support_links %}
+  <ul>
+    <li>
+      <a href="/prototype-admin/clear-data">Clear data</a>
+    </li>
+  </ul>
+{% endblock %}

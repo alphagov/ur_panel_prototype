@@ -1,22 +1,22 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-4{{/bodyClasses}}
+{% block body_classes %}version-4{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   How old are you?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}1{{/questionNumber}}
-{{$prevURL}}/version-4/{{/prevURL}}
-{{$nextURL}}name{{/nextURL}}
+{% block question_number %}1{% endblock %}
+{% block previous_url %}/version-4/{% endblock %}
+{% block next_url %}name{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
 <div class="form-group">
   <label class="form-label" for="age">Age</label>
   <input type="text" class="form-control form-control-3-chars" id="age">
 </div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+

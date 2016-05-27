@@ -1,14 +1,14 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$pageTitle}}
+{% block page_title %}
   Which country were you born in?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}3{{/questionNumber}}
-{{$prevURL}}country-live{{/prevURL}}
-{{$nextURL}}speak-english{{/nextURL}}
+{% block question_number %}3{% endblock %}
+{% block previous_url %}country-live{% endblock %}
+{% block next_url %}speak-english{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
 	    <div class="form-group">
@@ -19,6 +19,5 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}

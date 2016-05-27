@@ -1,16 +1,16 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-2{{/bodyClasses}}
+{% block body_classes %}version-2{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   Is English your first language?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}8{{/questionNumber}}
-{{$prevURL}}country-live{{/prevURL}}
-{{$nextURL}}speak-english{{/nextURL}}
+{% block question_number %}8{% endblock %}
+{% block previous_url %}country-live{% endblock %}
+{% block next_url %}speak-english{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
  	<div class="form-group">
 		<p class="form-hint">Select one:</p>
@@ -26,6 +26,5 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}

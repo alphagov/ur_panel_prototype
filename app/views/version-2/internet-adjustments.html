@@ -1,47 +1,47 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-2{{/bodyClasses}}
+{% block body_classes %}version-2{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   What adjustments do you make to help you use the internet?
-{{/pageTitle}}
+{% endblock %}
 
-{{$questionNumber}}5{{/questionNumber}}
-{{$prevURL}}access-internet{{/prevURL}}
-{{$nextURL}}gender{{/nextURL}}
+{% block question_number %}5{% endblock %}
+{% block previous_url %}access-internet{% endblock %}
+{% block next_url %}gender{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
- 	<div class="form-group">
+	<div class="form-group">
 		<p class="form-hint">Select all that apply:</p>
 	    <div class="form-group">
-	    	<input type="checkbox" id="access-internet-1"> 
+		<input type="checkbox" id="access-internet-1"> 
 	      <label class="form-label form-control-checkbox" for="access-internet-1">
-	      	Wear glasses
+		Wear glasses
 	      </label>
 	      <input type="checkbox" id="access-internet-2"> 
 	      <label class="form-label form-control-checkbox" for="access-internet-2">
-	      	Screen reader
+		Screen reader
 	      </label>
 	      <input type="checkbox" id="access-internet-3"> 
 	      <label class="form-label form-control-checkbox" for="access-internet-3">
-	      	Large print
+		Large print
 	      </label>
-	      <input type="checkbox" id="access-internet-3"> 
-	      <label class="form-label form-control-checkbox" for="access-internet-3">
-	      	Tinted glasses
+	      <input type="checkbox" id="access-internet-7"> 
+	      <label class="form-label form-control-checkbox" for="access-internet-7">
+		Tinted glasses
 	      </label>
 	      <input type="checkbox" id="access-internet-4"> 
 	      <label class="form-label form-control-checkbox" for="access-internet-4">
-	      	Hearing aid
+		Hearing aid
 	      </label>
 	      <input type="checkbox" id="access-internet-5"> 
 	      <label class="form-label form-control-checkbox" for="access-internet-5">
-	      	Induction loop
+		Induction loop
 	      </label>
 	      <input type="checkbox" id="access-internet-6"> 
 	      <label class="form-label form-control-checkbox" for="access-internet-6">
-	      	Other:
+		Other:
 	      </label>
 
 	      <label class="visuallyhidden" for="other">Please specify</label>
@@ -56,8 +56,8 @@
 	    </div>
 	</div>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}
+
 
 

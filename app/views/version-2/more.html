@@ -1,12 +1,12 @@
-{{<templates/layout-govuk}}
+{% extends "templates/layout-govuk.html" %}
 
-{{$bodyClasses}}version-2{{/bodyClasses}}
+{% block body_classes %}version-2{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
 	Take part in GOV.UK user research
-{{/pageTitle}}
+{% endblock %}
 
-{{$content}}
+{% block content %}
 
 <div id="global-breadcrumb" class="header-context">
     <ol role="breadcrumbs" class="group">
@@ -88,6 +88,6 @@
 
 </main>
 
-{{/content}}
+{% endblock %}
 
-{{/templates/layout-govuk}}
+

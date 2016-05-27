@@ -1,0 +1,15 @@
+// GOV.UK front end toolkit dependencies
+@import "colours";
+@import "shims";
+@import "measurements";
+@import "typography";
+@import "css3";
+@import "url-helpers";
+
+// Patterns
+@import 'patterns/check-your-answers';
+@import "modules/search-and-breadcrumb";
+@import "modules/form-navigation";
+@import "modules/other-specify";
+@import "modules/auto-suggest";
+@import "modules/select-boxes";

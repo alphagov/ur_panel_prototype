@@ -1,0 +1,23 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+  What’s your home postcode?
+{% endblock %}
+
+{% block question_number %}2{% endblock %}
+{% block previous_url %}research-types{% endblock %}
+{% block page_url %}postcode{% endblock %}
+{% block next_url %}which-devices{% endblock %}
+
+{% block question_content %}
+
+<div class="form-group">
+  <label class="form-label" for="postcode">Postcode</label>
+  <input type="text" class="form-control form-control-1-4" id="postcode" name="postcode">
+</div>
+
+{% endblock %}
+
+

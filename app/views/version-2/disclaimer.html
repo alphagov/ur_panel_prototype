@@ -1,15 +1,15 @@
-{{<templates/layout-question}}
+{% extends "templates/layout-question.html" %}
 
-{{$bodyClasses}}version-2{{/bodyClasses}}
+{% block body_classes %}version-2{% endblock %}
 
-{{$pageTitle}}
+{% block page_title %}
   Before you start
-{{/pageTitle}}
+{% endblock %}
 
-{{$prevURL}}contact-details{{/prevURL}}
-{{$nextURL}}gender{{/nextURL}}
+{% block previous_url %}contact-details{% endblock %}
+{% block next_url %}gender{% endblock %}
 
-{{$questionContent}}
+{% block question_content %}
 
 	<p class="text">
 		In order to find research most relevant to you, we'll ask you some questions about you, your home, your family life and work.
@@ -19,6 +19,5 @@
 		You don't have to answer all of these questions, and the information you provide will be used only for research purposes by the Government Digital Service’s research team.
 	</p>
 
-{{/questionContent}}
+{% endblock %}
 
-{{/templates/layout-question}}

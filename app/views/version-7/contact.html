@@ -1,0 +1,30 @@
+{% extends "templates/layout-question-post.html" %}
+
+{% block body_classes %}version-7{% endblock %}
+
+{% block page_title %}
+  Your contact details
+{% endblock %}
+
+{% block question_number %}3{% endblock %}
+{% block previous_url %}/version-5{% endblock %}
+{% block next_url %}email-sent{% endblock %}
+
+{% block question_content %}
+
+  <div class="form-group">
+    <label class="form-label" for="email">What's your full name?</label>
+    <input type="text" class="form-control form-control-1-2" id="name" name="name" value="{{name}}">
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="email">Email address</label>
+    <input type="text" class="form-control form-control-1-1" id="email" name="email" value="{{email}}">
+  </div>
+
+<p class="text">We’ll only use this information to contact you with research opportunities relevant to you. We won’t share it with anyone else and you can leave the panel at any time.</p>
+
+
+{% endblock %}
+
+
